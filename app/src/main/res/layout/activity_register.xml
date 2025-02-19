@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/fondo"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="189dp"
+        android:layout_height="34dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="574dp" />
+
+    <EditText
+        android:id="@+id/tvContraseña"
+        android:layout_width="203dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="490dp"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/confirm_password"
+        android:layout_width="203dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="406dp"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:text="Registrarse" />
+
+    <TextView
+        android:id="@+id/CreaTuCuenta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Crea Tu Cuenta"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/username"
+        android:layout_marginBottom="6dp"
+        android:textColor="#FFFFFF"
+        android:text="Nombre" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvContraseña"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="9dp"
+        android:text="Apellido" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:layout_above="@+id/confirm_password"
+        android:layout_marginBottom="8dp"
+        android:text="Cedula" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:layout_above="@+id/register_button"
+        android:layout_marginBottom="288dp"
+        android:text="Fecha de nacimiento" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:layout_above="@+id/register_button"
+        android:layout_marginBottom="230dp"
+        android:ems="10"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/register_button"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="196dp"
+        android:text="Celular" />
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/register_button"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="138dp"
+        android:ems="10"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:layout_above="@+id/register_button"
+        android:layout_marginBottom="91dp"
+        android:text="Contraseña" />
+
+    <EditText
+        android:id="@+id/editTextText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/register_button"
+        android:layout_marginBottom="37dp"
+        android:ems="10"
+        android:inputType="text" />
+
+</RelativeLayout>
