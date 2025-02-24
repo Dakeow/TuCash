@@ -1,132 +1,155 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@mipmap/fondo"
     android:padding="16dp">
 
-    <EditText
-        android:id="@+id/username"
-        android:layout_width="189dp"
-        android:layout_height="34dp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="574dp" />
-
-    <EditText
-        android:id="@+id/tvContraseña"
-        android:layout_width="203dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="490dp"
-        android:inputType="textPassword" />
-
-    <EditText
-        android:id="@+id/confirm_password"
-        android:layout_width="203dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="406dp"
-        android:inputType="textPassword" />
-
-    <Button
-        android:id="@+id/register_button"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="40dp"
-        android:text="Registrarse" />
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/CreaTuCuenta"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Crea Tu Cuenta"
-        android:textColor="#FFFFFF"
-        android:textSize="40sp"
-        android:textStyle="bold" />
+        <!-- Título -->
+        <TextView
+            android:id="@+id/CreaTuCuenta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Crea Tu Cuenta"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp" />
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/username"
-        android:layout_marginBottom="6dp"
-        android:textColor="#FFFFFF"
-        android:text="Nombre" />
+        <!-- Nombre -->
+        <TextView
+            android:id="@+id/tvNombre_Registro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/tvContraseña"
-        android:textColor="#FFFFFF"
-        android:layout_marginBottom="9dp"
-        android:text="Apellido" />
+        <EditText
+            android:id="@+id/etNombre_Registro"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Ingrese su nombre"
+            android:inputType="textPersonName"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp" />
 
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="#FFFFFF"
-        android:layout_above="@+id/confirm_password"
-        android:layout_marginBottom="8dp"
-        android:text="Cedula" />
+        <!-- Apellido -->
+        <TextView
+            android:id="@+id/tvApellido_Registro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apellido"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+        <EditText
+            android:id="@+id/etApellido_Registro"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Ingrese su apellido"
+            android:inputType="textPersonName"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp" />
 
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="#FFFFFF"
-        android:layout_above="@+id/register_button"
-        android:layout_marginBottom="288dp"
-        android:text="Fecha de nacimiento" />
+        <!-- Cédula -->
+        <TextView
+            android:id="@+id/tvCedula_Registro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cédula"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+        <EditText
+            android:id="@+id/etCedula_Registro"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Ingrese su cédula"
+            android:inputType="number"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp" />
 
-    <EditText
-        android:id="@+id/editTextText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="#FFFFFF"
-        android:layout_above="@+id/register_button"
-        android:layout_marginBottom="230dp"
-        android:ems="10"
-        android:inputType="text" />
+        <!-- Fecha de Nacimiento -->
+        <TextView
+            android:id="@+id/tvFechaNacimiento_Registro"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="Fecha de Nacimiento"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
 
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/register_button"
-        android:textColor="#FFFFFF"
-        android:layout_marginBottom="196dp"
-        android:text="Celular" />
+        <EditText
+            android:id="@+id/etFechaNacimiento_Registro"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="DD/MM/AAAA"
+            android:inputType="date"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp" />
 
-    <EditText
-        android:id="@+id/editTextText2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/register_button"
-        android:textColor="#FFFFFF"
-        android:layout_marginBottom="138dp"
-        android:ems="10"
-        android:inputType="text" />
+        <!-- Celular -->
+        <TextView
+            android:id="@+id/tvCelular_Registro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Celular"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+        <EditText
+            android:id="@+id/etCelular_Registro"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Ingrese su celular"
+            android:inputType="phone"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp" />
 
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="#FFFFFF"
-        android:layout_above="@+id/register_button"
-        android:layout_marginBottom="91dp"
-        android:text="Contraseña" />
+        <!-- Contraseña -->
+        <TextView
+            android:id="@+id/tvContraseña_Registro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contraseña"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+        <EditText
+            android:id="@+id/etContraseña_Registro"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Ingrese su contraseña"
+            android:inputType="textPassword"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp" />
 
-    <EditText
-        android:id="@+id/editTextText3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/register_button"
-        android:layout_marginBottom="37dp"
-        android:ems="10"
-        android:inputType="text" />
+        <!-- Confirmar Contraseña -->
+        <TextView
+            android:id="@+id/tvConfirmarContraseña_Registro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirmar Contraseña"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+        <EditText
+            android:id="@+id/etConfirmarContraseña_Registro"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Confirme su contraseña"
+            android:inputType="textPassword"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="24dp" />
 
-</RelativeLayout>
+        <!-- Botón de Registro -->
+        <Button
+            android:id="@+id/register_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registrarse"
+            android:backgroundTint="@android:color/holo_blue_light"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</ScrollView>

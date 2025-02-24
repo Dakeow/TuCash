@@ -1,93 +1,80 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@mipmap/fondo"
     android:padding="16dp">
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inicia Sesión"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"/>
+
+    <TextView
+        android:id="@+id/tvUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Usuario"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/app_name"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/tvUser"
+        android:inputType="text"
+        android:hint="Ingrese su usuario" />
 
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/username"
-        android:layout_marginBottom="-85dp"
         android:text="Contraseña"
-        android:textColor="#FFFFFF" />
-
-    <TextView
-        android:id="@+id/app_name"
-        tools:visibility="visible"
-        android:layout_width="272dp"
-        android:layout_height="93dp"
-        android:layout_above="@+id/username"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="150dp"
-        android:layout_marginBottom="75dp"
-        android:fontFamily="@font/pangolin"
-        android:text="Inicia Sesión"
         android:textColor="#FFFFFF"
-        android:textSize="40sp"
-        android:textStyle="bold"
-        android:visibility="visible" />
-
-    <EditText
-        android:inputType="textPassword"
-        android:id="@+id/username"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/password"
-        android:layout_marginBottom="55dp" />
+        android:layout_below="@id/username"
+        android:layout_marginTop="20dp"/>
 
     <EditText
         android:id="@+id/password"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/register_button"
-        android:layout_marginBottom="144dp"
-        android:inputType="textPassword" />
+        android:layout_height="48dp"
+        android:layout_below="@id/textView2"
+        android:inputType="textPassword"
+        android:hint="Ingrese su contraseña"/>
 
     <Button
-        android:id="@+id/"
-        android:layout_width="254dp"
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/register_button"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="65dp"
-        android:layout_marginBottom="41dp"
+        android:layout_below="@id/password"
+        android:layout_marginTop="79dp"
         android:text="Ingresar" />
 
     <TextView
-        android:id="@+id/tvUser"
+        android:id="@+id/forgot_password_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/username"
-        android:layout_marginBottom="20dp"
-        android:text="Usuario"
-        android:textColor="#FFFFFF" />
-
-    <TextView
-        android:id="@+id/forgot_password_button"
-        android:layout_width="151dp"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/login_button"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="385dp"
-        android:layout_marginEnd="68dp"
-        android:layout_marginBottom="24dp"
         android:text="Olvidé mi contraseña"
-        android:textColor="#FFFFFF" />
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/login_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
 
     <TextView
         android:id="@+id/register_button"
-        android:layout_width="137dp"
-        android:layout_height="33dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="129dp"
-        android:layout_marginBottom="160dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No estoy registrado"
         android:textColor="#FFFFFF"
-        android:text="No estoy registrado" />
-
+        android:layout_below="@id/forgot_password_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
 </RelativeLayout>

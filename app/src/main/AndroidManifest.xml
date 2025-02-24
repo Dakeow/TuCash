@@ -25,13 +25,20 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
+        <!-- LoginActivity: Activity para loguearse -->
         <activity android:name=".LoginActivity" />
 
-        <!-- ForgotPasswordActivity: La actividad para recuperar la contraseña -->
-        <activity android:name=".ForgotPasswordActivity" />
+        <!-- LoginActivity: Activity para pasar al Home -->
+        <activity android:name=".HomeActivity" />
 
-        <!-- RegisterActivity: La actividad para registrar nuevos usuarios -->
-        <activity android:name=".RegisterActivity" />
+        <!-- ForgotPasswordActivity: Activity para recuperar la contraseña -->
+
+        <activity android:name=".ForgotPasswordActivity"/>
+
+        <!-- RegisterActivity: Activity para registrar nuevos usuarios -->
+        <activity android:name=".RegisterActivity"/>
+
+
 
     </application>
 
